@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +13,19 @@
             margin: 0;
             padding: 0;
             background-color: #000;
+            color: #fff;
+        }
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background-image: url('https://raw.githubusercontent.com/BrunoMarshall/Fleek.live/main/images/moon.jpg');
             background-size: cover;
             background-position: center;
-            color: #fff;
+            z-index: -1;
         }
         header {
             padding: 80px; /* Adjust the padding to control the space covered by the background image */
